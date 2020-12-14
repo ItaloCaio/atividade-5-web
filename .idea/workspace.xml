@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8c4171-d489-4ade-b2a0-5912d375f1fb" name="Default Changelist" comment="Ativando JWT e spring securitiy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/ProfessorEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Integrante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Projeto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/repository/ProfessorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/repository/ProjetoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/TurmaEndPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/model/Turma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/repository/TurmaRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/br/com/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -78,16 +87,8 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\italo.caio.carvalho\Documents\universidade\web\Atividade\ead-project-develop\src\main\java\security" />
-      <recent name="E:\Universidade\8º Período\EAD\ead-project\src\main\resources\templates\views" />
-      <recent name="E:\Universidade\8º Período\EAD\ead-project\src\main\resources\public" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="br.com.eadsimple.model" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.com.eadsimple.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\italo.caio.carvalho\Documents\universidade\web\Atividade\ead-project-develop\src\main\java\br\com\web" />
@@ -95,6 +96,15 @@
       <recent name="E:\Universidade\8º Período\EAD\ead-project\src\main\resources\templates\views" />
       <recent name="E:\Universidade\8º Período\EAD\ead-project\src\main\resources\public\js\controllers" />
       <recent name="E:\Universidade\8º Período\EAD\ead-project\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.web.endpoint" />
+      <recent name="br.com.eadsimple.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\italo.caio.carvalho\Documents\universidade\web\Atividade\ead-project-develop\src\main\java\security" />
+      <recent name="E:\Universidade\8º Período\EAD\ead-project\src\main\resources\templates\views" />
+      <recent name="E:\Universidade\8º Período\EAD\ead-project\src\main\resources\public" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ApplicationStart">
@@ -262,42 +272,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="360" y="0" width="575" height="680" key="#PasswordEncoder/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1600733228183" />
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1606740783146">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1607968788022">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606740783146" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1607968788022" />
     <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1600734026430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1600734026430" />
-    <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600731541045">
+    <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607972329527">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1600731541045" />
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600730513440">
+    <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1607972329527" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607966698066">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1600730513440" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1607966698066" />
     <state x="163" y="0" key="CommitChangelistDialog2" timestamp="1606786533924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="163" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606786533924" />
-    <state width="1237" height="223" key="GridCell.Tab.0.bottom" timestamp="1606786259560">
+    <state width="1237" height="223" key="GridCell.Tab.0.bottom" timestamp="1606787618842">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="223" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606786259560" />
-    <state width="1237" height="223" key="GridCell.Tab.0.center" timestamp="1606786259560">
+    <state width="1237" height="223" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606787618842" />
+    <state width="1237" height="223" key="GridCell.Tab.0.center" timestamp="1606787618842">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="223" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606786259560" />
-    <state width="1237" height="223" key="GridCell.Tab.0.left" timestamp="1606786259560">
+    <state width="1237" height="223" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606787618842" />
+    <state width="1237" height="223" key="GridCell.Tab.0.left" timestamp="1606787618842">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="223" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606786259560" />
-    <state width="1237" height="223" key="GridCell.Tab.0.right" timestamp="1606786259560">
+    <state width="1237" height="223" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606787618842" />
+    <state width="1237" height="223" key="GridCell.Tab.0.right" timestamp="1606787618842">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="223" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606786259560" />
+    <state width="1237" height="223" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606787618842" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1606740896107">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -310,10 +320,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606786544069" />
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1606784300142">
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1607966659946">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606784300142" />
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1607966659946" />
     <state x="371" y="96" key="extract.method.dialog" timestamp="1606672412921">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
