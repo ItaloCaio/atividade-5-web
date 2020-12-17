@@ -34,7 +34,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         Aluno aluno = alunoRepository.findByUsuario(username);
         Professor professor = null;
         if(aluno == null){
-             professor = Optional.ofNullable(professorRepository.findByProfessor(username))
+             professor = Optional.ofNullable(professorRepository.findByUsuario(username))
                     .orElseThrow(() -> new UsernameNotFoundException("User not found"));
         }
 

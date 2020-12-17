@@ -2,11 +2,18 @@ package br.com.web.endpoint;
 
 import br.com.web.error.CustomErrorType;
 import br.com.web.error.ResourceNotFoundException;
+import br.com.web.model.Integrante;
+import br.com.web.model.Professor;
 import br.com.web.model.Projeto;
+import br.com.web.repository.IntegranteRepository;
+import br.com.web.repository.ProfessorRepository;
 import br.com.web.repository.ProjetoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,10 +21,14 @@ import org.springframework.web.bind.annotation.*;
 public class ProjetoEndpoint {
 
     private final ProjetoRepository projetoRepository;
+    private final ProfessorRepository professorRepository;
+    private final IntegranteRepository integranteRepository;
 
     @Autowired
-    public ProjetoEndpoint(ProjetoRepository projetoRepository) {
+    public ProjetoEndpoint(ProjetoRepository projetoRepository, ProfessorRepository professorRepository, IntegranteRepository integranteRepository) {
         this.projetoRepository = projetoRepository;
+        this.professorRepository = professorRepository;
+        this.integranteRepository = integranteRepository;
     }
 
     @RequestMapping(method = RequestMethod.GET)
@@ -34,9 +45,27 @@ public class ProjetoEndpoint {
         }
         return new ResponseEntity<>(projeto, HttpStatus.OK);
     }
-
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping
-    public ResponseEntity<?> save(@RequestBody Projeto projeto) {
+    public ResponseEntity<?> save(@AuthenticationPrincipal UserDetails userDetails, @RequestBody Projeto projeto) {
+
+        Professor professor = professorRepository.findByUsuario(userDetails.getUsername());
+        projeto.setCoordenador(professor);
+
+        return new ResponseEntity<>(projetoRepository.save(projeto), HttpStatus.OK);
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping(path = "/{id}/addAluno")
+    public ResponseEntity<?> addAluno(@PathVariable long id, @RequestBody Integrante integrante) {
+
+        verifyIfProjetoExists(id);
+        Projeto projeto = projetoRepository.findOne(id);
+        if (projeto == null) {
+            return new ResponseEntity<>(new CustomErrorType("Projeto not found "), HttpStatus.NOT_FOUND);
+        }
+        integrante.setProjeto(projeto);
+        integranteRepository.save(integrante);
 
         return new ResponseEntity<>(projetoRepository.save(projeto), HttpStatus.OK);
     }

@@ -1,15 +1,30 @@
 package br.com.web.model;
 
-public class Integrante {
-    private String funcao;
-    private Aluno aluno;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
-    public Integrante(String funcao, Aluno aluno) {
+@Entity
+public class Integrante extends AbstractEntity{
+    private String funcao;
+    @ManyToOne
+    @JoinColumn(name="aluno_id", referencedColumnName="id")
+    private Aluno aluno;
+    @ManyToOne
+    @JoinColumn(name="integrante_id", referencedColumnName="id")
+    private Projeto projeto;
+
+    public Integrante(String funcao, Aluno aluno, Projeto projeto) {
         this.funcao = funcao;
         this.aluno = aluno;
+        this.projeto = projeto;
     }
 
     public Integrante() {
+    }
+
+    public void setProjeto(Projeto projeto) {
+        this.projeto = projeto;
     }
 
     public String getFuncao() {

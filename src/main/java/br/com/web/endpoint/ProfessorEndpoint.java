@@ -7,6 +7,7 @@ import br.com.web.repository.ProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -37,6 +38,10 @@ public class ProfessorEndpoint {
 
     @PostMapping
     public ResponseEntity<?> save(@RequestBody Professor professor) {
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+
+        professor.setSenha(bCryptPasswordEncoder.encode(professor.getSenha()));
+
 
         return new ResponseEntity<>(professorRepository.save(professor), HttpStatus.OK);
     }

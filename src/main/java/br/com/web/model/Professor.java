@@ -1,6 +1,8 @@
 package br.com.web.model;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class Professor extends  AbstractEntity{
@@ -11,6 +13,8 @@ public class Professor extends  AbstractEntity{
     private String formacao;
     private String usuario;
     private String senha;
+    @OneToMany(mappedBy="coordenador")
+    private List<Projeto> projetos;
 
     public String getUsuario() {
         return usuario;
