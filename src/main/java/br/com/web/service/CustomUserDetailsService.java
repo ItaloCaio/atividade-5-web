@@ -2,9 +2,10 @@ package br.com.web.service;
 
 
 import br.com.web.model.Aluno;
+import br.com.web.model.Professor;
 import br.com.web.repository.AlunoRepository;
+import br.com.web.repository.ProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,32 +19,34 @@ import java.util.Optional;
 @Component
 public class CustomUserDetailsService implements UserDetailsService {
 
-    private final AlunoRepository userRepository;
+    private final AlunoRepository alunoRepository;
+    private final ProfessorRepository professorRepository;
 
     @Autowired
-    public CustomUserDetailsService(AlunoRepository userRepository) {
-
-        this.userRepository = userRepository;
-
+    public CustomUserDetailsService(AlunoRepository userRepository, ProfessorRepository professorRepository) {
+        this.alunoRepository = userRepository;
+        this.professorRepository = professorRepository;
     }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         UserDetails userDetails;
-        Aluno user = Optional.ofNullable(userRepository.findByUsuario(username))
-                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
-
-
-        System.out.println(username);
-
-        System.out.println(user.getUsuario());
-        System.out.println(user.getSenha());
+        Aluno aluno = alunoRepository.findByUsuario(username);
+        Professor professor = null;
+        if(aluno == null){
+             professor = Optional.ofNullable(professorRepository.findByProfessor(username))
+                    .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+        }
 
         List<GrantedAuthority> grantedAuthorityAdmin = AuthorityUtils.createAuthorityList("ROLE_USER", "ROLE_ADMIN");
         List<GrantedAuthority> grantedAuthorityUser = AuthorityUtils.createAuthorityList("ROLE_USER");
 
-         userDetails = new org.springframework.security.core.userdetails.User( user.getUsuario(), user.getSenha(), grantedAuthorityAdmin);
-        System.out.println(userDetails);
+        if (aluno != null)
+            userDetails = new org.springframework.security.core.userdetails.User( aluno.getUsuario(), aluno.getSenha(), grantedAuthorityUser);
+        else
+        {
+            userDetails = new org.springframework.security.core.userdetails.User( professor.getUsuario(), professor.getSenha(), grantedAuthorityAdmin);
+        }
         return userDetails;
     }
 }

@@ -9,12 +9,33 @@ public class Professor extends  AbstractEntity{
     private String matricula;
     private String atuacao;
     private String formacao;
+    private String usuario;
+    private String senha;
 
-    public Professor(String nome, String matricula, String atuacao, String formacao) {
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+
+    public Professor(String nome, String matricula, String atuacao, String formacao, String usuario, String senha) {
         this.nome = nome;
         this.matricula = matricula;
         this.atuacao = atuacao;
         this.formacao = formacao;
+        this.usuario = usuario;
+        this.senha = senha;
     }
 
     public Professor() {
