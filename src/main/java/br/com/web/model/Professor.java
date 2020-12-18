@@ -22,17 +22,8 @@ public class Professor extends  AbstractEntity{
     private String usuario;
     @NotEmpty
     private String senha;
-    @JsonBackReference
     @OneToMany(mappedBy="coordenador")
     private List<Projeto> projetos;
-
-    public List<Projeto> getProjetos() {
-        return projetos;
-    }
-
-    public void setProjetos(List<Projeto> projetos) {
-        this.projetos = projetos;
-    }
 
     public String getUsuario() {
         return usuario;

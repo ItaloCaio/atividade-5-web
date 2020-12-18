@@ -17,8 +17,6 @@ public class Projeto extends AbstractEntity {
     private String nome;
     @NotEmpty
     private String descricao;
-    @JsonManagedReference
-
     @ManyToOne
     @JoinColumn(name="coordenador_id", referencedColumnName="id")
     private Professor coordenador;

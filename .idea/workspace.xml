@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8c4171-d489-4ade-b2a0-5912d375f1fb" name="Default Changelist" comment="Ativando JWT e spring securitiy">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/tests/AlunoTestEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ead-project-develop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ead-project-develop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/AlunoEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/AlunoEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/ProjetoEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/ProjetoEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Professor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/model/Projeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Projeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/AlunoEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/AlunoEndpoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/ProjetoEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/ProjetoEndpoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/model/Aluno.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/model/Aluno.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/model/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/model/Professor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/model/Projeto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/model/Projeto.class" afterDir="false" />
     </list>
@@ -326,22 +308,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="163" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608254398425" />
-    <state width="1237" height="303" key="GridCell.Tab.0.bottom" timestamp="1608255223968">
+    <state width="1237" height="85" key="GridCell.Tab.0.bottom" timestamp="1608257465358">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="303" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608255223968" />
-    <state width="1237" height="303" key="GridCell.Tab.0.center" timestamp="1608255223967">
+    <state width="1237" height="85" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608257465358" />
+    <state width="1237" height="85" key="GridCell.Tab.0.center" timestamp="1608257465358">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="303" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608255223967" />
-    <state width="1237" height="303" key="GridCell.Tab.0.left" timestamp="1608255223967">
+    <state width="1237" height="85" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608257465358" />
+    <state width="1237" height="85" key="GridCell.Tab.0.left" timestamp="1608257465358">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="303" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608255223967" />
-    <state width="1237" height="303" key="GridCell.Tab.0.right" timestamp="1608255223967">
+    <state width="1237" height="85" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608257465358" />
+    <state width="1237" height="85" key="GridCell.Tab.0.right" timestamp="1608257465358">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="303" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608255223967" />
+    <state width="1237" height="85" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608257465358" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1608244951074">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
