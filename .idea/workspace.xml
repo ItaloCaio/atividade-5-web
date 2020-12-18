@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8c4171-d489-4ade-b2a0-5912d375f1fb" name="Default Changelist" comment="Ativando JWT e spring securitiy">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/repository/IntegranteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/web/tests/AlunoTestEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ead-project-develop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ead-project-develop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/AlunoEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/AlunoEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/ProfessorEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/ProfessorEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/ProjetoEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/endpoint/ProjetoEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/model/Integrante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Integrante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Professor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/model/Projeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/model/Projeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/repository/ProfessorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/repository/ProfessorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/web/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/web/service/CustomUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/AlunoEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/AlunoEndpoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/ProfessorEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/ProfessorEndpoint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/ProjetoEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/endpoint/ProjetoEndpoint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/model/Aluno.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/model/Aluno.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/model/Integrante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/model/Integrante.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/model/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/model/Professor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/model/Projeto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/model/Projeto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/repository/ProfessorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/repository/ProfessorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/web/service/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/web/service/CustomUserDetailsService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +163,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AlunoTestEndpoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ead-project-develop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.web.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.web.tests" />
+      <option name="MAIN_CLASS_NAME" value="br.com.web.tests.AlunoTestEndpoint" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="web-atividade-4" />
       <option name="VM_PARAMETERS" />
@@ -217,6 +235,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ApplicationStart" />
+        <item itemvalue="JUnit.AlunoTestEndpoint" />
         <item itemvalue="Application.PasswordEncoder (1)" />
         <item itemvalue="Application.PasswordEncoder" />
       </list>
@@ -283,10 +302,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="360" y="0" width="575" height="680" key="#PasswordEncoder/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1600733228183" />
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1608222472182">
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1608254319886">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608222472182" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608254319886" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1608254696131">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608254696131" />
     <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1600734026430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -299,30 +322,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1607966698066" />
-    <state x="163" y="0" key="CommitChangelistDialog2" timestamp="1608206578540">
+    <state x="163" y="0" key="CommitChangelistDialog2" timestamp="1608254398425">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="163" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608206578540" />
-    <state width="1237" height="255" key="GridCell.Tab.0.bottom" timestamp="1608222499389">
+    <state x="163" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608254398425" />
+    <state width="1237" height="303" key="GridCell.Tab.0.bottom" timestamp="1608255223968">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608222499389" />
-    <state width="1237" height="255" key="GridCell.Tab.0.center" timestamp="1608222499389">
+    <state width="1237" height="303" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608255223968" />
+    <state width="1237" height="303" key="GridCell.Tab.0.center" timestamp="1608255223967">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608222499389" />
-    <state width="1237" height="255" key="GridCell.Tab.0.left" timestamp="1608222499388">
+    <state width="1237" height="303" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608255223967" />
+    <state width="1237" height="303" key="GridCell.Tab.0.left" timestamp="1608255223967">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608222499388" />
-    <state width="1237" height="255" key="GridCell.Tab.0.right" timestamp="1608222499389">
+    <state width="1237" height="303" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608255223967" />
+    <state width="1237" height="303" key="GridCell.Tab.0.right" timestamp="1608255223967">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608222499389" />
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1606740896107">
+    <state width="1237" height="303" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608255223967" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1608244951074">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1606740896107" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680/1920.0.2560.1400@0.0.1280.680" timestamp="1608244951074" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1600733474567">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

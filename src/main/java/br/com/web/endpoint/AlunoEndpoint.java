@@ -56,6 +56,7 @@ public class AlunoEndpoint {
 
         aluno.setSenha(bCryptPasswordEncoder.encode(aluno.getSenha()));
 
+        System.out.println(aluno.toString());
 
         return new ResponseEntity<>(alunoRepository.save(aluno), HttpStatus.OK);
     }

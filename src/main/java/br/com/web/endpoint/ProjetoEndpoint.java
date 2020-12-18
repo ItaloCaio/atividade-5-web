@@ -70,6 +70,19 @@ public class ProjetoEndpoint {
         return new ResponseEntity<>(projetoRepository.save(projeto), HttpStatus.OK);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
+    @GetMapping(path = "/{id}/getIntegrantes")
+    public ResponseEntity<?> getIntegrantes(@PathVariable long id) {
+
+        verifyIfProjetoExists(id);
+        Projeto projeto = projetoRepository.findOne(id);
+        if (projeto == null) {
+            return new ResponseEntity<>(new CustomErrorType("Projeto not found "), HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(projeto.getIntegrantes(), HttpStatus.OK);
+    }
+
     @DeleteMapping(path = "/{id}")
     public ResponseEntity<?> delete(@PathVariable long id) {
         verifyIfProjetoExists(id);

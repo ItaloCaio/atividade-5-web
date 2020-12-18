@@ -1,5 +1,7 @@
 package br.com.web.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.Entity;
@@ -15,6 +17,8 @@ public class Projeto extends AbstractEntity {
     private String nome;
     @NotEmpty
     private String descricao;
+    @JsonManagedReference
+
     @ManyToOne
     @JoinColumn(name="coordenador_id", referencedColumnName="id")
     private Professor coordenador;

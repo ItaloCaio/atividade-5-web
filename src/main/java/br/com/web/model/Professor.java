@@ -1,20 +1,38 @@
 package br.com.web.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
 public class Professor extends  AbstractEntity{
-
+    @NotEmpty
     private String nome;
+    @NotEmpty
     private String matricula;
+    @NotEmpty
     private String atuacao;
+    @NotEmpty
     private String formacao;
+    @NotEmpty
     private String usuario;
+    @NotEmpty
     private String senha;
+    @JsonBackReference
     @OneToMany(mappedBy="coordenador")
     private List<Projeto> projetos;
+
+    public List<Projeto> getProjetos() {
+        return projetos;
+    }
+
+    public void setProjetos(List<Projeto> projetos) {
+        this.projetos = projetos;
+    }
 
     public String getUsuario() {
         return usuario;
